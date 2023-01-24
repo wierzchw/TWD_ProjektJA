@@ -15,7 +15,7 @@ library(shinyWidgets)
 ui0 <- fluidPage(
   titlePanel("O projekcie"),
   p("Witaj!") ,
-  p("Niniejszy dashboard przygotowany został przez trójkę studentów w ramach przedmiotu Techniki Wizualizacji Danych na kierunku Inżynieria I Analiza Danych.
+  p(style="text-align: justify;", "Niniejszy dashboard przygotowany został przez trójkę studentów w ramach przedmiotu Techniki Wizualizacji Danych na kierunku Inżynieria I Analiza Danych.
   Zawarte w nim wizualizacje dadzą Ci wgląd w aktywność jego autorów (dalej danonków) na telefonie i komputerze osobistym, jaka miała miejsce w okresie od 12 grudnia 2022 do 
   8 stycznia 2023. Dane potrzebne do przeprowadzenia takiej analizy zebrane zostały przy użyciu open-source'owego trackera Activity Watch oraz zaczerpnięte ze Spotify."),
 p(a(href="https://github.com/wierzchw/TWD_ProjektJA", "Repozytorium")),
@@ -26,14 +26,14 @@ p("Wiktor Wierzchowski - ", a(href="https://github.com/wierzchw", "wierzchw"))
 )
 
 ui1 <- fluidPage(
-  titlePanel("Uśredninony dzień"),
-  "Poniższy panel zawiera informacje na temat średniej liczby minut spędzonych przy urządzeniach w
+  titlePanel("Uśredniony dzień"),
+  p(style="text-align: justify;","Poniższy panel zawiera informacje na temat średniej liczby minut spędzonych przy urządzeniach w
   każdej godzinie doby, wraz z umieszczonym pod spodem rozbiciem na trzy kategorie: 
   praca, rozrywka oraz inne. Jako pracę oflagowane zostały wszelkie aktywności związane ze
   studiami, organizacją dnia, itd. Natomiast za rozrywką kryją się gry, filmy, seriale,
   media społecznościowe, itp. Na ogół późniejsze godziny wiązały się z większą liczbą minut spędzoną na rozrywce i 
   mniejszą na pracy, choć Danonek 1 wydaje się wyłamywać z tego trendu. Jest on też osobą u której najwięcej aktywności załapało się 
-  do kategorii inne, wciąż jest to jednak zdecydowana mniejszość. Na tytuł nocnego marka zdecydowanie w pierwszej kolejności zasługuje Danonek 3.",
+  do kategorii inne, wciąż jest to jednak zdecydowana mniejszość. Na tytuł nocnego marka zdecydowanie w pierwszej kolejności zasługuje Danonek 3."),
   # Application title
   tags$hr(style="border-color: black;"),
   
@@ -85,12 +85,12 @@ ui1 <- fluidPage(
 ui2 <- fluidPage(
   titlePanel("Top aplikacje"),
   setSliderColor(c("#2c3e50","#2c3e50"), c(1,2)),
-  "W tej sekcji prezentowane jest zestawienie aplikacji, w których spędziliśmy najwięcej czasu oraz jaką część
+  p(style="text-align: justify;","W tej sekcji prezentowane jest zestawienie aplikacji, w których spędziliśmy najwięcej czasu oraz jaką część
   tego czasu tracker zarejestrował jako status afk (okres braku aktywności z myszy i klawiatury przez co najmniej 3 minuty). 
   Żadna aktywność z telefonu nie została oznaczona jako afk, ponieważ tracker mierzył aktywność wyłącznie gdy ekran był odblokowany oraz 
-  w żaden sposób nie mierzył czy użytkownik jest afk czy nie. Dla danych z komputera takim statusem pochwalić się mogą jedynie gry i środowiska do programowania.
+  w żaden sposób nie mierzył czy użytkownik jest afk czy nie. Dla danych z komputera takim statusem pochwalić się mogą jedynie gry i środowiska do programowania. 
   U wszystkich najczęściej używaną aplikacją desktopową jest przeglądarka, jednak patrząc całościowo u Danonka 2 wyprzedza ją 
-  YouTube.",
+  YouTube."),
   # Application title
   # Application title
   tags$hr(style="border-color: black;"),
@@ -149,9 +149,9 @@ ui3 <- fluidPage(
   # Application title
   titlePanel("Przeglądarka dni"),
 
-  "Pod tą zakładką kryje się możliwość dokładnego przeglądania aktywności z wybranego, pojedynczego dnia. Jest to świetny sposób na przejrzenie nietypowych
+  p(style="text-align: justify;","Pod tą zakładką kryje się możliwość dokładnego przeglądania aktywności z wybranego, pojedynczego dnia. Jest to świetny sposób na przejrzenie nietypowych
   dni w roku po których spodziewamy się ciekawych wyników.
-  W analizowanym przez nas okresie miały miejsce Wigilia, Sylwester jak również rekreacyjne wyjazdy. Zdołacie znaleźć je wszystkie?",
+  W analizowanym przez nas okresie miały miejsce Wigilia, Sylwester jak również rekreacyjne wyjazdy. Zdołacie znaleźć je wszystkie?"),
   # Application title
   tags$hr(style="border-color: black;"),
   
@@ -194,9 +194,9 @@ ui3 <- fluidPage(
 
 ui4 <- fluidPage(
   titlePanel("Słuchanie muzyki"),
-  "Najlepsze okoliczności do słuchania muzyki są bardzo subiektywną kwestią. Poniższe wykresy przedstawiają jak procentowo 
+  p(style="text-align: justify;", "Najlepsze okoliczności do słuchania muzyki są bardzo subiektywną kwestią. Poniższe wykresy przedstawiają jak procentowo 
   rozkłada się czas spędzony na słuchaniu muzyki na platformie Spotify. I tak od razu widzimy że dla Danonka 2 słuchanie muzyki jest aktywnością samą w sobie i 
-  rzadko kiedy towarzyszy jej coś innego. Podczas gdy Danonki 1 oraz 3 od czasu do czasu umilają sobie pracę i odpoczynek odrobiną muzyki.",
+  rzadko kiedy towarzyszy jej coś innego. Podczas gdy Danonki 1 oraz 3 od czasu do czasu umilają sobie pracę i odpoczynek odrobiną muzyki."),
   setSliderColor(c("#2c3e50"), c(1)),
   
   # Application title
