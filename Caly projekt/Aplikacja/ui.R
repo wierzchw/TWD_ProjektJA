@@ -18,7 +18,7 @@ source("ui8.R", local = TRUE)
 ui <- navbarPage(
   title = "Projekt JA",
   tabPanel("O projekcie", ui0),
-  tabPanel("Uśredninony dzień", ui1),
+  tabPanel("Uśredniony dzień", ui1),
   tabPanel("Top aplikacje", ui2),
   tabPanel("Przeglądarka dni", ui3),
   tabPanel("Słuchanie muzyki", ui4),
